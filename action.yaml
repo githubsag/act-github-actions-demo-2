@@ -9,7 +9,6 @@ runs:
   using: "composite"
   steps:
     - name: Print the name
-      run: |
-        echo 'Hello ${{ inputs.NAME }}!'
+      run: | echo 'Hello ${{ inputs.NAME }}!'
 
       shell: bash
