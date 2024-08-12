@@ -7,8 +7,9 @@ inputs:
         default: 'N/A'
 runs:
   using: "composite"
-  steps:
+  steps: 
     - name: Print the name
-      run: | echo 'Hello ${{ inputs.NAME }}!'
+      run: |
+        echo 'Hello ${{ inputs.NAME }}!'
 
       shell: bash
