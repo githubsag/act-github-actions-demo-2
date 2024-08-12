@@ -16,4 +16,4 @@ jobs:
     - name: Print name
       uses: ./
       with:
-        NAME: ${{ inputs.NAME }
+        NAME: ${{ inputs.NAME }}
