@@ -1,0 +1,15 @@
+name: 'Print a name simple action'
+description: 'Prints a name'
+inputs:
+    NAME:
+        description: 'The name to print'
+        required: false
+        default: 'N/A'
+runs:
+  using: "composite"
+  steps:
+    - name: Print the name
+      run: |
+        echo 'Hello ${{ inputs.NAME }}!'
+
+      shell: bash
